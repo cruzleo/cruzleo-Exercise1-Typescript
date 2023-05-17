@@ -1,0 +1,47 @@
+<h2>City Directory</h2>
+City Name: <input id="cityName" type="text" />
+<br />
+Country: <input id="country" type="text" />
+<br />
+Population: <input id="population" type="number" />
+<br />
+<button
+  onclick="addCity(document.getElementById('cityName').value, 
+document.getElementById('country').value, 
+document.getElementById('population').value)"
+>
+  Add
+</button>
+
+<br />
+<h4>City List</h4>
+Search:
+<input
+  id="searchValue"
+  type="text"
+  onkeyup="searchResult(document.getElementById('searchValue').value)"
+/>
+<br />
+<br />
+<div id="cityList"></div>
+
+<h2>ISBN - 10 Validation</h2>
+ISBN: <input id="isbn" type="text" />
+<br />
+<button onclick="validateISBN(document.getElementById('isbn').value)">
+  Validate
+</button>
+<div id="isbnResult"></div>
+
+<h2>Change it up!</h2>
+String: <input id="wordInput" type="text" />
+<br />
+<button onclick="changeString(document.getElementById('wordInput').value)">
+  Transform
+</button>
+<div id="changeResult"></div>
+
+<script>
+  var exports = { __esModule: { value: true } };
+</script>
+<script src="./index.js"></script>
